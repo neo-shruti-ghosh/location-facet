@@ -6,8 +6,7 @@ export interface Country {
 
 export async function getCountries(): Promise<Country[]> {
     try {
-        const response = await fetch('https://restcountries.com/v3.1/all');
-        console.log(response, "<><><")
+        const response = await fetch('https://restcountries.com/v3.1/all?fields=name,capital,flags');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }

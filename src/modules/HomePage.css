@@ -1,0 +1,142 @@
+.container {
+    background-color: #e7e7e7;
+    width: 300px;
+    padding: 20px;
+
+}
+
+.headerContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerText {
+    font-weight: 600;
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.HomePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.btn {
+    cursor: pointer;
+    color: #1976d2;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    color: #3c3ecc;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+.rotate90 {
+    transform: rotate(-90deg);
+}
+
+.inputSearchBar {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    flex: 1
+}
+
+.searchBar {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.dataContainer {
+    margin-top: 20px;
+}
+
+.searchBar {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.optionsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.label {
+    font-size: 12px;
+}
+
+.countryList {
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: auto;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px
+}
+
+.listItem {
+    width: 100%;
+}
+
+.country-name {
+    display: inline-block;
+    max-width: 200px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.flag {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.indexItem {
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.indexItem:hover{
+    color: #1976d2;
+}
+
+.indexList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.labelContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5px
+}
