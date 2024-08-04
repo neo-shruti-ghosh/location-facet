@@ -142,7 +142,9 @@ function HomePage() {
             </div>
             <div className="listContainer">
               <div className="countryList">
-                {loading && <CircularProgress />}
+                {loading && <div className='loader'>
+                  <CircularProgress />
+                  </div>}
                 {filteredData.map((country, index) => (
                   <FormControlLabel
                     className="listItem"

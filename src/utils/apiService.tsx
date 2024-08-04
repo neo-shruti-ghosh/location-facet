@@ -11,11 +11,17 @@ export async function getCountries(): Promise<Country[]> {
             throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        return data.map((country: any) => ({
-            name: country.name.common,
-            capital: country.capital ? country.capital[0] : 'N/A',
-            flag: country.flags.png
-        }));
+        return data.map((country: any) => {
+            const name = country?.name?.common ?? 'Unknown';
+            const capital = country.capital.length > 0 ? country.capital.join(', ') : 'Not Provided';
+            const flag = country?.flags?.png ?? 'https://via.placeholder.com/320x240.png?text=No+Flag';
+
+            return {
+                name,
+                capital,
+                flag
+            };
+        });
     } catch (error) {
         console.error('Error fetching countries:', error);
         return [];

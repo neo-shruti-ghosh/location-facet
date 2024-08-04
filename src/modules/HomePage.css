@@ -140,3 +140,11 @@
     flex-direction: row;
     gap: 5px
 }
+
+.loader {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
