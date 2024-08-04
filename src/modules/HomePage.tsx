@@ -76,7 +76,8 @@ function HomePage() {
       } else {
         newSelected.add(countryName);
       }
-      setSelectAllChecked(newSelected.size === data.length);
+      setSelectAllChecked(false);
+      setClearAllChecked(false)
       return newSelected;
     });
   };
